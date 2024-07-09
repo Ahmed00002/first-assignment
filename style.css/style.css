@@ -3,6 +3,7 @@
 
 :root {
   --azeretMono: "Azeret Mono";
+  --defMargin: 100px;
 }
 /* reset the default styles */
 * {
@@ -91,4 +92,31 @@ nav > h1 {
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+/* footer */
+footer {
+  background-color: rgba(13, 19, 33, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+.footer-text {
+  width: 50%;
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+.icons {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+.icons img {
+  margin-left: 20px;
 }
