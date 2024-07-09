@@ -16,6 +16,8 @@ nav {
   padding: 35px 100px;
   justify-content: space-between;
   align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 nav > button {
   box-sizing: border-box;
@@ -177,6 +179,106 @@ nav > h1 {
 .vector2 img {
   width: 300px;
   height: 100%;
+}
+/* 3rd section (my inspiration) */
+.inspiration-sec {
+  margin: var(--defMargin);
+  text-align: center;
+}
+.inspiration-sec-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.inspiration-sec-container h1 {
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.inspiration-sec-container p {
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+.inspiration-sec-container iframe {
+  height: 550px;
+  width: 100%;
+}
+
+/* 4th section (My target) */
+.target {
+  margin: var(--defMargin);
+}
+.target-t-s {
+  margin-bottom: 45px;
+}
+.target-t-s .title {
+  text-align: center;
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.target-t-s .subtitle {
+  text-align: center;
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.target-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.target-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: left;
+  justify-content: center;
+  gap: 10px;
+}
+.html,
+.java {
+  border-radius: 16px;
+  padding: 40px;
+  background: rgba(255, 76, 30, 0.05);
+}
+.css {
+  border-radius: 16px;
+  padding: 40px;
+  background: rgba(0, 76, 232, 0.05);
+}
+.item-head {
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 22px;
+  font-weight: 800;
+  margin: 22px 0 8px 0;
+}
+.item-details {
+  text-align: left;
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 16px;
+  font-weight: 400;
+}
+.learn-more-btn {
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+  display: block;
+  margin-top: 20px;
 }
 /* footer */
 .footer-container {
