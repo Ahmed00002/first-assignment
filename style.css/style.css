@@ -368,15 +368,16 @@ nav > h1 {
   justify-content: center;
   align-items: center;
   padding: 0 var(--defMargin);
+  color: white;
+  text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../assets/handshake.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  text-align: center;
 }
 .support h1 {
+  text-align: center;
   font-family: var(--azeretMono);
   font-size: 30px;
   font-weight: 800;
@@ -415,10 +416,7 @@ nav > h1 {
   transition: 500ms;
 }
 .message-box button:hover {
-  border: 2px solid rgb(255, 255, 255);
-  background-color: transparent;
-  backdrop-filter: blur(25);
-  color: white;
+  transform: scale(1.07);
 }
 /* footer */
 footer {
