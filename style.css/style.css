@@ -374,6 +374,7 @@ nav > h1 {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  text-align: center;
 }
 .support h1 {
   font-family: var(--azeretMono);
@@ -411,6 +412,13 @@ nav > h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 500ms;
+}
+.message-box button:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  backdrop-filter: blur(25);
+  color: white;
 }
 /* footer */
 footer {
