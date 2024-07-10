@@ -53,13 +53,14 @@ nav > h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: auto;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 74px;
+  padding: 40px;
 }
 .hero-container {
   width: 80%;
@@ -100,12 +101,16 @@ nav > h1 {
 }
 /* 2nd section (why web dev??) */
 .web-dev {
-  margin: var(--defMargin);
+  max-width: 1140px;
   text-align: center;
+  padding: 80px 90px 0 80px;
+  background: rgba(13, 19, 33, 0.03);
+  border-radius: 16px;
+  margin: 0 auto;
 }
 .web-deb-container {
-  max-width: 1140px;
-  margin: 0 auto;
+  border-radius: 16px;
+  padding: 20px;
 }
 .web-dev-title {
   color: rgb(13, 19, 33);
@@ -122,12 +127,21 @@ nav > h1 {
   margin-bottom: 80px;
 }
 .reason {
+  /* box-shadow: 0 0 1px rgb(120, 115, 115); */
+  border: 1px solid rgba(13, 19, 33, 0.08);
+
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 70px;
   text-align: left;
-  height: 250px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .reason-details {
   width: 60%;
@@ -147,7 +161,7 @@ nav > h1 {
   opacity: 0.7;
   margin-bottom: 30px;
 }
-.reason-details > button {
+.reason-details a > button {
   box-sizing: border-box;
   border: 1px solid rgb(13, 19, 33);
   opacity: 0.7;
@@ -161,15 +175,8 @@ nav > h1 {
   padding: 10px 20px 10px 20px;
   cursor: pointer;
 }
-.vector {
-  height: 100%;
-  width: 40%;
-  position: relative;
-}
+
 .vector img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 300px;
   height: 100%;
 }
@@ -204,9 +211,17 @@ nav > h1 {
   opacity: 0.7;
   margin-bottom: 60px;
 }
+.yt-vdo {
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+}
 .inspiration-sec-container iframe {
   height: 550px;
   width: 100%;
+  border-radius: 16px;
 }
 
 /* 4th section (My target) */
@@ -321,7 +336,7 @@ nav > h1 {
 }
 .next-target-details h1 {
   color: rgb(13, 19, 33);
-  font-family: Azeret Mono;
+  font-family: var(--azeretMono);
   font-size: 22px;
   font-weight: 800;
 }
@@ -342,13 +357,70 @@ nav > h1 {
 .next-target-details {
   width: 80%;
 }
+/* support section */
+.support {
+  max-width: 1140px;
+  margin: 0 auto 80px auto;
+  height: 314px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--defMargin);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/handshake.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.support h1 {
+  font-family: var(--azeretMono);
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.support p {
+  color: rgb(255, 255, 255);
+  font-family: var(--azeretMono);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 22px;
+}
+.def-font {
+  color: rgb(13, 19, 33);
+  font-family: var(--azeretMono);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.message-box input {
+  width: 548px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px 15px 20px;
+}
+.message-box button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* footer */
-.footer-container {
+footer {
   background-color: rgba(13, 19, 33, 0.04);
+}
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
+  padding: 30px 50px;
 }
 .footer-container {
   max-width: 1140px;
@@ -362,6 +434,7 @@ nav > h1 {
   font-size: 19px;
   font-weight: 600;
 }
+
 .icons {
   width: auto;
   height: 100%;
@@ -370,6 +443,8 @@ nav > h1 {
   align-items: center;
 }
 .icons img {
+  height: 40px;
+  width: 40px;
   margin-left: 20px;
   transition: 500ms;
 }
